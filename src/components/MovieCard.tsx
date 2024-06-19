@@ -67,7 +67,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, isFavorite = false }) => {
           Описание
         </Button>
         {isInFavorites ? (
-          <Button size="small" onClick={handleRemoveFromFavorites}>
+          <Button size="small" color="secondary" onClick={handleRemoveFromFavorites}>
             Избранный
           </Button>
         ) : (
