@@ -1,12 +1,14 @@
 import React from "react";
 import MovieList from "../components/MovieList";
+import FilterComponent from "../components/FilterComponent";
+import { Box } from "@mui/material";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Movies</h1>
+    <Box>
+      <FilterComponent />
       <MovieList />
-    </div>
+    </Box>
   );
 };
 

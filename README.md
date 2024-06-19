@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# Проект "Кино HD"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание
 
-## Available Scripts
+"Кино HD" — это веб-приложение для просмотра и управления фильмами. Оно позволяет пользователям фильтровать фильмы по жанрам, рейтингу и году, а также добавлять их в избранное. Приложение поддерживает светлую и темную тему, а также адаптивную верстку для мобильных устройств.
 
-In the project directory, you can run:
+## Функциональные возможности
 
-### `npm start`
+- **Просмотр фильмов**: Пользователи могут просматривать список фильмов с подробной информацией о каждом из них.
+- **Фильтрация фильмов**: Возможность фильтрации фильмов по жанрам, рейтингу и году.
+- **Избранное**: Фильмы можно добавлять в избранное и удалять из него.
+- **Темы**: Поддержка светлой и темной тем.
+- **Адаптивность**: Приложение адаптировано для использования на мобильных устройствах.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Установка
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Клонирование репозитория**
 
-### `npm test`
+   ```bash
+   git clone https://github.com/your-username/kino-hd.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Установка зависимостей**
 
-### `npm run build`
+   ```bash
+   cd kino-hd
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Запуск приложения**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Приложение будет доступно по адресу `http://localhost:3000`.
 
-### `npm run eject`
+## Технологии
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **React**: Для создания пользовательского интерфейса.
+- **MobX**: Для управления состоянием приложения.
+- **Material-UI**: Для стилизации компонентов.
+- **Axios**: Для работы с HTTP-запросами.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Структура проекта
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+│
+├── components/          # Компоненты приложения
+│   ├── MovieCard.tsx     # Карточка фильма
+│   ├── MovieDetails.tsx  # Детали фильма
+│   └── Filters.tsx       # Фильтры
+│
+├── pages/               # Страницы приложения
+│   ├── HomePage.tsx      # Главная страница
+│   └── FavoritesPage.tsx # Страница избранного
+│
+├── stores/              # Хранилище состояния
+│   └── MovieStore.ts     # Хранилище фильмов
+│
+└── App.tsx              # Главный компонент приложения
+```
